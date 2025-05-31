@@ -2,62 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, inital-scale=1.0"/>
-    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sankarsh Sagar | Portfolio</title>
     <link rel="stylesheet" href="styles.css"/>
+    <script src="script.js"></script>
     <link rel="icon" href="images/logo.png" type="image/png">
+
 </head>
 <body>
     <header>
         <nav>
-            <!--Navigation links will go here-->
             <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="projects.html">Projects</a>
-                </li>
-                <li>
-                    Conatacts
-                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <h1>Hello, I'm Sankars Sagar</h1>
-    </header>
-    
-    <main>
-        <!--About,Projectc,Skills,Contact etc-->
-
-        <!-- Introduction -->
-        <div>
-            <p>I am a passionate Computer science student.</p>
+        <button id="toggle-theme">🌙 Toggle Theme</button>
+        <div class="hero">
+            <h1>Hello, I'm Sankarsh Sagar 👋</h1>
+            <p>A Computer Science student with a passion for problem-solving, AI, and elegant design.</p>
         </div>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I’m currently pursuing a degree in Computer Science Engineering. I enjoy learning about AI, web development, and building solutions that can make a difference. Whether it’s coding contests or designing interfaces, I always bring curiosity and creativity.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>C, Java, Python</li>
+                <li>Data Structures & Algorithms</li>
+                <li>Machine Learning & Deep Learning</li>
+                <li>Web Development (HTML, CSS, JS)</li>
+                <li>Version Control (Git & GitHub)</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-card">
+                <h3>Brain Tumor Segmentation</h3>
+                <p>A deep learning pipeline using 3D U-Net and hybrid filters for accurate segmentation of brain tumors from MRI scans.</p>
+                <a href="projects.html">View More</a>
+            </div>
+            <div class="project-card">
+                <h3>Property Rights Quiz Game</h3>
+                <p>A Tkinter-based awareness game teaching the basics of copyrights, patents, and trademarks.</p>
+                <a href="projects.html">View More</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>Whether it's a collaboration or just a friendly chat, feel free to connect!</p>
+            <a href="mailto:sankarsh@example.com">📧 sankarsh@example.com</a>
+        </section>
     </main>
 
     <footer>
-        <!-- SOCIAL MEDIA -->
-        <ul>
-            <li>
-                <a href="https://www.linkedin.com/in/sankarsh-sagar/"><img src="images/linkedin.svg" alt="linkedin" width="30px"></a>
-            </li>
-            <li>
-                <a href="https://github.com/SankarshSagar"><img src="images/github.svg" alt="github" width="30px"></a>
-            </li>
-            <!-- Add more links later -->
-        </ul>
-
-        <!-- NAVIGATION PAGES -->
-        <ul>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="projects.html">Projects</a>
-            </li>
-        </ul>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/sankarsh-sagar/"><img src="images/linkedin.svg" alt="LinkedIn" width="30px"></a>
+            <a href="https://github.com/SankarshSagar"><img src="images/github.svg" alt="GitHub" width="30px"></a>
+        </div>
+        <div class="footer-nav">
+            <a href="index.html">Home</a> |
+            <a href="projects.html">Projects</a> |
+            <a href="contact.html">Contact</a>
+        </div>
+        <p>&copy; 2025 Sankarsh Sagar. All rights reserved.</p>
     </footer>
-    <!-- JS file for later-->
+    <button id="scrollTopBtn" title="Go to top">⬆️</button>
+
 </body>
-</html>
 </html>
