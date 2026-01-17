@@ -1,0 +1,77 @@
+/* THEME VARIABLES (change later easily) */
+:root {
+    --bg-main: #0d0d0d;
+    --bg-card: #1a1a1a;
+    --bg-nav: #111;
+    --text-main: #eaeaea;
+    --accent: #4da3ff;
+}
+
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    background-color: var(--bg-nav);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.nav-links a {
+    color: var(--text-main);
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+/* LEFT PROFILE */
+.profile {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 260px;
+    height: calc(100vh - 60px);
+    background-color: var(--bg-card);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.profile img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* MAIN CONTENT */
+.content {
+    margin-top: 60px;
+    margin-left: 280px;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: var(--bg-card);
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 6px;
+}

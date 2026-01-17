@@ -1,0 +1,196 @@
+/* THEME VARIABLES (change later easily) */
+:root {
+    /* Main backgrounds */
+    --bg-main: #0f1115;      /* page background (very dark, soft) */
+    --bg-nav: #14161b;       /* navbar */
+    --bg-card: #1a1d24;      /* cards / skills box / sidebar */
+
+    /* Text colors */
+    --text-main: #e6e6e6;    /* primary text */
+    --text-muted: #a0a0a0;   /* secondary text */
+
+    /* Accent color */
+    --accent: #4f8cff;      /* blue accent (modern & safe) */
+    --accent-soft: #7aa7ff;
+    --accent-dark: #2f5fd0;
+
+    /* Borders & shadows */
+    --border-soft: #2a2d36;
+    --shadow-color: rgba(0, 0, 0, 0.6);
+
+    
+}
+
+/* GLOBAL */
+body {
+    margin: 0;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    word-spacing: 2px;
+    letter-spacing: 0.3px;
+    line-height: 1.6;
+
+}
+h1,h2,h3,.navbar{
+    font-family: 'Poppins',sans-serif;
+}
+
+h1{
+    font-size: 60px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+/*  ------------------ NAVIGATION BAR ------------------ */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    background-color: var(--bg-nav);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: var(--text-main);
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+/* ------------------ LEFT PROFILE ------------------ */
+.profile {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 400px;
+    height: calc(100vh - 60px);
+    background-color: var(--bg-card);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.profile img {
+    width: 75%;
+    border-radius: 8px;
+}
+
+/* Profile Image & Content */
+.profile-info{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-info img{
+    width: 75%;  
+    height: auto;
+    border-radius: 16px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* Profile links */
+.contact-links {
+    margin-top: 25px;
+}
+
+.contact-links a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--text-main);
+    padding: 8px 0;
+    font-size: 14px; /* you can adjust later */
+}
+
+.contact-links img {
+    width: 20px;      /* icon size */
+    height: 20px;
+    object-fit: contain;
+}
+
+.contact-links a:hover {
+    color: var(--accent);
+}
+
+/* ------------------ MAIN CONTENT ------------------ */
+#uniq{
+    color: var(--accent);
+}
+.content {
+    margin-top: 60px;
+    margin-left: 420px;
+    padding: 20px;
+} 
+
+section {
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: var(--bg-card);
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+/* THE END */
+
+
+
+
+.skills-section {
+    padding: 50px 20px;
+    color: var(--text-main);
+}
+
+.skills-section h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    padding-left: 40px;   /* align header and box */
+    font-weight: 600;
+}
+
+/* Big box container */
+.skills-box {
+    display: flex;
+    flex-wrap: wrap;          /* allows multiple lines */
+    gap: 12px;                /* spacing between skills */
+    padding: 20px;
+    background-color: var(--bg-card); /* visible on dark background */
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+    margin-left: 40px;        /* aligns with header */
+    max-width: 700px;         /* prevent box from stretching too far */
+}
+
+/* Individual skill boxes */
+.skill {
+    padding: 8px 14px;
+    background-color: var(--border-soft);  /* slightly different shade for visibility */
+    border-radius: 12px;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    color: var(--text-main);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
