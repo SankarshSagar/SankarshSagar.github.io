@@ -1,8 +1,8 @@
 /* THEME VARIABLES (change later easily) */
 :root {
     /* Main backgrounds */
-    --bg-main: #0f1115;      /* page background (very dark, soft) */
-    --bg-nav: #14161b;       /* navbar */
+    --bg-main: #0f1115;      /* page background color */
+    --bg-nav: #14161b;       /* navbar color */
     --bg-card: #1a1d24;      /* cards / skills box / sidebar */
 
     /* Text colors */
@@ -17,8 +17,12 @@
     /* Borders & shadows */
     --border-soft: #2a2d36;
     --shadow-color: rgba(0, 0, 0, 0.6);
-
     
+}
+
+/* I added this to avoid shift of nav elements to right */
+html {
+    scrollbar-gutter: stable;
 }
 
 /* GLOBAL */
@@ -114,7 +118,7 @@ h1{
     text-decoration: none;
     color: var(--text-main);
     padding: 8px 0;
-    font-size: 14px; /* you can adjust later */
+    font-size: 14px;
 }
 
 .contact-links img {
@@ -148,10 +152,7 @@ section {
     border-radius: 6px;
 }
 
-/* THE END */
-
-
-
+/* Below part is Temparary */
 
 .skills-section {
     padding: 50px 20px;
@@ -181,7 +182,7 @@ section {
 /* Individual skill boxes */
 .skill {
     padding: 8px 14px;
-    background-color: var(--border-soft);  /* slightly different shade for visibility */
+    background-color: var(--border-soft);
     border-radius: 12px;
     font-weight: 500;
     text-align: center;
@@ -194,3 +195,57 @@ section {
     transform: scale(1.05);
     box-shadow: 0 6px 18px rgba(0,0,0,0.6);
 }
+
+
+
+.education-section {
+    padding: 40px;
+}
+
+.education-section h2 {
+    margin-bottom: 25px;
+    color: var(--accent);
+}
+
+/* Degree card */
+.edu-card {
+    background: var(--bg-card);
+    padding: 25px;
+    margin-bottom: 40px;
+    border-left: 3px solid var(--accent);
+}
+
+.edu-card h3 {
+    margin-bottom: 12px;
+}
+
+.edu-place {
+    font-size: 14px;
+    opacity: 0.85;
+    margin-bottom: 4px;
+}
+
+.edu-duration {
+    font-size: 13px;
+    opacity: 0.6;
+    margin-bottom: 12px;
+}
+
+.edu-desc {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Placeholder for certificates */
+.cert-container {
+    background: var(--bg-card);
+    padding: 25px;
+    min-height: 180px;
+    border-left: 3px dashed var(--accent);
+}
+
+.cert-placeholder {
+    opacity: 0.6;
+    font-size: 14px;
+}
+
